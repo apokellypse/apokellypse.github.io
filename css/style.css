@@ -377,21 +377,23 @@ ul, li {
   width: 100%;
   color: white;
   background-color: #002535;
-  height: 56px; }
+  height: 40px; }
   .nav-band .nav-label {
-    width: 144px;
+    width: 88px;
     margin: 0 auto;
     left: 0;
     right: 0; }
     .nav-band .nav-label:before {
       content: "";
       background-image: url("../img/icons/home_icon_white.png");
-      background-size: 40px 40px;
+      background-size: 24px 24px;
       display: block;
-      width: 40px;
-      height: 40px;
+      width: 24px;
+      height: 24px;
       float: left;
       margin: 8px 4px 0 0; }
+    .nav-band .nav-label .primary-header {
+      font-size: 1.2em; }
 
 .header, .section {
   display: block;
@@ -400,13 +402,18 @@ ul, li {
 .header {
   -webkit-box-shadow: 0 2px 0 0 #007E96;
   -moz-box-shadow: 0 2px 0 0 #007E96;
-  box-shadow: 0 2px 0 0 #007E96; }
+  box-shadow: 0 2px 0 0 #007E96;
+  overflow: hidden; }
+  .header .double-col {
+    float: left; }
 
 .double-col {
   width: 42.5%;
   margin: 0 2% 0 5%;
   vertical-align: middle;
   display: inline-block; }
+  .double-col .primary-header {
+    margin-top: 25%; }
 
 .primary-header {
   margin: 0;
@@ -422,9 +429,9 @@ ul, li {
 .summary-list-item {
   clear: both;
   overflow: hidden; }
-  .summary-list-item:nth-child(even) .img-wrapper {
+  .summary-list-item:nth-child(odd) .double-col {
     float: left; }
-  .summary-list-item:nth-child(odd) .img-wrapper {
+  .summary-list-item:nth-child(even) .double-col {
     float: right; }
   .summary-list-item:last-child {
     margin-bottom: 56px; }
@@ -433,7 +440,7 @@ ul, li {
   background-color: #fff;
   position: fixed;
   clear: both;
-  height: 80px;
+  height: 56px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -457,15 +464,16 @@ ul, li {
         height: 80px; }
   .nav .nav-icon-label {
     position: absolute;
-    top: 8px;
+    top: 4px;
     left: 0;
-    right: 0; }
+    right: 0;
+    font-size: 0.8em; }
     .nav .nav-icon-label:before {
       content: "";
-      background-size: 40px 40px;
+      background-size: 32px 32px;
       display: block;
-      width: 40px;
-      height: 40px;
+      width: 32px;
+      height: 32px;
       margin: 0 auto; }
   .nav .nav-list-item:nth-child(1) .nav-icon-label:before {
     background-image: url("../img/icons/home_icon_blue.png"); }
